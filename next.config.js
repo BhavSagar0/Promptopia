@@ -13,7 +13,8 @@ const nextConfig = {
       topLevelAwait: true,
     }
     return config
-  }
+  },
+  revalidate: false
 }
 
 module.exports = nextConfig
