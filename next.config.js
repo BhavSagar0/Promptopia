@@ -14,7 +14,7 @@ const nextConfig = {
     }
     return config
   },
-  revalidate: true
+  revalidate: false
 }
 
 module.exports = nextConfig
