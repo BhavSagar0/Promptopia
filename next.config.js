@@ -6,6 +6,7 @@ const nextConfig = {
   },
   images: {
     domains: ['lh3.googleusercontent.com'],
+    unoptimized: true
   },
   webpack(config) {
     config.experiments = {
@@ -14,7 +15,8 @@ const nextConfig = {
     }
     return config
   },
-  revalidate: false
+  output: 'export',
+  distDir: '_static'
 }
 
 module.exports = nextConfig
